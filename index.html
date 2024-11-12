@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/d188054eba.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="ancho">
+        <figure>
+            <img src="imagenes/logo.jpg" alt="">
+        </figure>
+    </header>
+
+    <section class="contenidos ancho">
+        <article class="contenido1">
+            <div class="info_team">
+                <h3 class="subtitulo1">Our Team</h3>
+                <h1>A Dedicated Team of Experts</h1>
+                <br>
+                <h3 class="subtitulo2">Passion, experience and a fierce commitment to education are the cornerstones of our success in the beauty industry</h3>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam asperiores laborum optio nobis quia error quod deleniti, sequi voluptas saepe ullam obcaecati esse praesentium voluptatem assumenda quidem dolor. Quasi fugit porro officia labore cum pariatur neque id eaque impedit, numquam debitis soluta quia repudiandae</p>
+                <br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt eligendi aut perferendis suscipit ipsa? Numquam sapiente quidem aliquam omnis repudiandae.</p>
+                <br>
+                <div class="botones_info">
+                    <a href="">LEARN MORE</a>
+                    <a href="">VIEW ALL TEAM</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="contenido2">
+            <div class="persona_info">
+                <figure>
+                    <img src="imagenes/foto1.jpg" alt="">
+                </figure>
+                <br>
+                <h1>Jessica Cooper</h1>
+                <p>Esthetician</p>
+                <div class="redes">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                </div>
+                <a href="#" id="boton_modal">GET IN TOUCH</a>
+            </div>
+
+            <div class="persona_info">
+                <figure>
+                    <img src="imagenes/foto2.jpg" alt="">
+                </figure>
+                <br>
+                <h1>Robert Wagner</h1>
+                <p>Hairdresser</p>
+                <div class="redes">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                </div>
+                <a href="#" id="boton_modal2">GET IN TOUCH</a>
+            </div>
+
+
+
+        </article>
+
+    </section>
+
+
+
+    <footer class="ancho">
+        <!-- <p>Hola</p> -->
+    </footer>
+
+
+
+
+
+    <section class="fondomodal" id="modal">
+        <div class="contenido_modal">
+            <div class="contenido_iconoCerrar">
+                <i id="cerrar_modal" class="cerrarmodal fa-solid fa-rectangle-xmark"></i>
+            </div>
+            <h1>Contact Us</h1>
+            <br>
+            <p>If you have any questions concerning our services, plase fill out the contact form below</p>
+            <br>
+            <form action="">
+                <input type="text" placeholder="Name *">
+                <input type="text" placeholder="E-mail *">
+                <textarea name="" id="" placeholder="Message *"></textarea>
+            </form>
+            <a href="">SUBMIT</a>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <script>
+    $("#boton_modal").click(function () {
+      $("#modal").addClass("mostrar");
+    })
+
+    $("#boton_modal2").click(function () {
+      $("#modal").addClass("mostrar");
+    })
+
+    $("#cerrar_modal").click(function () {
+      $("#modal").removeClass("mostrar");
+    })
+
+    // click por fuera
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            $("#modal").removeClass("mostrar");
+        }
+    };
+
+
+    
+    </script>
+
+
+</body>
+</html>
